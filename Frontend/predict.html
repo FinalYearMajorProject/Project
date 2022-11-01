@@ -1,29 +1,96 @@
-{% extends 'main.html' %}
-{% block content %}
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+
+    <title>Prediction</title>
+
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=Edge">
+    <meta name="description" content="">
+    <meta name="keywords" content="">
+    <meta name="author" content="Tooplate">
+    <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
+
+    <link rel="stylesheet" href="css/bootstrap.min.css">
+    <link rel="stylesheet" href="css/font-awesome.min.css">
+    <link rel="stylesheet" href="css/animate.css">
+    <link rel="stylesheet" href="css/owl.carousel.css">
+    <link rel="stylesheet" href="css/owl.theme.default.min.css">
+
+    <!-- MAIN CSS -->
+    <link rel="stylesheet" href="css/tooplate-style.css">
+
+</head>
 <style>
-body {
-    font-family: Cambria;
-    height: 100%;
-    background-image: linear-gradient(#4e0374, #c37ee6);
-    margin: 0;
-    background-repeat: no-repeat;
-    background-attachment: fixed;
-}
+    .result {
+        background: #a5c422;
+        border: 0;
+        border-radius: 7px;
+        color: #ffffff;
+        font-size: inherit;
+        font-weight: 500;
+        padding: 14px 20px;
+        display: inline-block;
+        padding: 6px 12px;
+        margin-bottom: 0;
+        margin-top: 25px;
+        font-size: 24px;
+        font-weight: 400;
+        line-height: 1.42857143;
+        text-align: center;
+        white-space: nowrap;
+        vertical-align: middle;
+    }
 </style>
-    <div class="row"  style="margin-bottom: 477px;">
-        <div class="col-md-3"></div>
-        <div class="col-md-6">
-            {% if pred == 1 %}
-                <div class="card card-body alert alert-danger"><center>POSITIVE. The patient might have the disease.</center></div>
-            {% else %}
-                <div class="card card-body alert alert-success"><center>NEGATIVE. The patient is healthy.</center></div>
-            {% endif %}
+
+<body id="top" data-spy="scroll" data-target=".navbar-collapse" data-offset="50">
+
+    <!-- PRE LOADER -->
+    <section class="preloader">
+        <div class="spinner">
+
+            <span class="spinner-rotate"></span>
+
+        </div>
+    </section>
+
+    <!-- HOME -->
+    <section id="home" class="slider" data-stellar-background-ratio="0.5">
+        <div class="container">
             <div class="row">
-                <div class="col-md-4"></div>
-                <div class="col-md-4"><a href="{{ url_for('home') }}" class="btn btn-block btn-primary" style="background-color: #4e0374">Back to Home</a></div>
-                <div class="col-md-4"></div>
+                <div class="item item-third">
+                    <!-- if(res==false) -->
+                    <!-- <div class="caption">
+                        <div class="col-md-offset-1 col-md-10">
+                            <h1>Congratulations!!</h1>
+                            <h3>The patient is healthy</h3>
+                            <p class="result">Negative</p>
+                        </div>
+                    </div> -->
+
+                    <!-- else -->
+                    <div class="caption">
+                        <div class="col-md-offset-1 col-md-10">
+                            <h1>Hard Luck!!</h1>
+                            <h3>The patient is might have the disease</h3>
+                            <p class="result">Positive</p>
+                        </div>
+                    </div>
+                </div>
             </div>
         </div>
-        <div class="col-md-3"></div>
-    </div>
-{% endblock %}
+    </section>
+    <!-- SCRIPTS -->
+    <script src="js/jquery.js"></script>
+    <script src="js/bootstrap.min.js"></script>
+    <script src="js/jquery.sticky.js"></script>
+    <script src="js/jquery.stellar.min.js"></script>
+    <script src="js/wow.min.js"></script>
+    <script src="js/smoothscroll.js"></script>
+    <script src="js/owl.carousel.min.js"></script>
+    <script src="js/custom.js"></script>
+
+</body>
+
+</html>
