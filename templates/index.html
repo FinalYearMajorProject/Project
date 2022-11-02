@@ -11,14 +11,14 @@
      <meta name="author" content="Tooplate">
      <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
 
-     <link rel="stylesheet" href="css/bootstrap.min.css">
-     <link rel="stylesheet" href="css/font-awesome.min.css">
-     <link rel="stylesheet" href="css/animate.css">
-     <link rel="stylesheet" href="css/owl.carousel.css">
-     <link rel="stylesheet" href="css/owl.theme.default.min.css">
+     <link rel="stylesheet" href="../static/css/bootstrap.min.css">
+     <link rel="stylesheet" href="../static/css/font-awesome.min.css">
+     <link rel="stylesheet" href="../static/css/animate.css">
+     <link rel="stylesheet" href="../static/css/owl.carousel.css">
+     <link rel="stylesheet" href="../static/css/owl.theme.default.min.css">
 
      <!-- MAIN CSS -->
-     <link rel="stylesheet" href="css/tooplate-style.css">
+     <link rel="stylesheet" href="../static/css/tooplate-style.css">
 
 </head>
 <body id="top" data-spy="scroll" data-target=".navbar-collapse" data-offset="50">
@@ -108,7 +108,7 @@
                                    <p>This website will enable health labs and individuals to speculate the chances of an individual having a chronic disease. Users only need to answer some questions to get an idea whether they have a disease or not.</p>
                               </div>
                               <figure class="profile wow fadeInUp" data-wow-delay="1s">
-                                   <img src="images/author-image.jpg" class="img-responsive" alt="">
+                                   <img src="../static/images/author-image.jpg" class="img-responsive" alt="">
                                    <figcaption>
                                         <h3>High Accuracy Rate</h3>
                                         <p>Zero Pain, Zero Cost</p>
@@ -137,14 +137,14 @@
                     <div class="col-md-4 col-sm-6">
                          <div class="news-thumb wow fadeInUp" data-wow-delay="0.4s">
                               <a href="breast_cancer.html">
-                                   <img src="images/news-image1.jpg" class="img-responsive" alt="">
+                                   <img src="../static/images/news-image1.jpg" class="img-responsive" alt="">
                               </a>
                               <div class="news-info">
                                    <span>2.3 million women diagnosed with breast cancer in 2020</span>
-                                   <h3><a href="breast_cancer.html">Breast Cancer Detection</a></h3>
+                                   <h3><a href="{{ url_for('cancer') }}">Breast Cancer Detection</a></h3>
                                    <p>The form has certain mean, error and worst inputs which helps the model to give a highly efficient prediction.</p>
                                    <div class="author">
-                                        <img src="images/author-image.jpg" class="img-responsive" alt="">
+                                        <img src="../static/images/author-image.jpg" class="img-responsive" alt="">
                                         <div class="author-info">
                                              <h5>Model Accuracy</h5>
                                              <p>97%</p>
@@ -157,14 +157,14 @@
                     <div class="col-md-4 col-sm-6">
                          <div class="news-thumb wow fadeInUp" data-wow-delay="0.6s">
                               <a href="heart.html">
-                                   <img src="images/news-image2.jpg" class="img-responsive" alt="">
+                                   <img src="../static/images/news-image2.jpg" class="img-responsive" alt="">
                               </a>
                               <div class="news-info">
                                    <span>20.1 million adults age 20 and older have CAD</span>
-                                   <h3><a href="heart.html">Heart Disease Detection</a></h3>
+                                   <h3><a href="{{ url_for('heart') }}">Heart Disease Detection</a></h3>
                                    <p>Users need to answer some numeric questions about their health condition to know if they suffer from a heart disease.</p>
                                    <div class="author">
-                                        <img src="images/author-image.jpg" class="img-responsive" alt="">
+                                        <img src="../static/images/author-image.jpg" class="img-responsive" alt="">
                                         <div class="author-info">
                                              <h5>Model Accuracy</h5>
                                              <p>85%</p>
@@ -177,14 +177,14 @@
                     <div class="col-md-4 col-sm-6">
                          <div class="news-thumb wow fadeInUp" data-wow-delay="0.8s">
                               <a href="liver.html">
-                                   <img src="images/news-image3.jpg" class="img-responsive" alt="">
+                                   <img src="../static/images/news-image3.jpg" class="img-responsive" alt="">
                               </a>
                               <div class="news-info">
                                    <span>Hepatitis B is the most common contagious liver disease in the world</span>
-                                   <h3><a href="liver.html">Liver Disease Detection</a></h3>
+                                   <h3><a href="{{ url_for('liver') }}">Liver Disease Detection</a></h3>
                                    <p>Only a set of 10 questions will determine whether the person has chronic liver illness or not. </p>
                                    <div class="author">
-                                        <img src="images/author-image.jpg" class="img-responsive" alt="">
+                                        <img src="../static/images/author-image.jpg" class="img-responsive" alt="">
                                         <div class="author-info">
                                              <h5>Model Accuracy</h5>
                                              <p>72%</p>
@@ -200,14 +200,14 @@
                     <div class="col-md-4 col-sm-6">
                          <div class="news-thumb wow fadeInUp" data-wow-delay="0.4s">
                               <a href="medical_cost.html">
-                                   <img src="images/news-image4.jpg" class="img-responsive" alt="">
+                                   <img src="../static/images/news-image4.jpg" class="img-responsive" alt="">
                               </a>
                               <div class="news-info">
                                    <span>Only 37% of indian population is covered under health insurance</span>
                                    <h3><a href="medical_cost.html">Medical Insurance Cost Prediction</a></h3>
                                    <p>Users need to answer some basic questions to know how much their medical insurance will cost.</p>
                                    <div class="author">
-                                        <img src="images/author-image.jpg" class="img-responsive" alt="">
+                                        <img src="../static/images/author-image.jpg" class="img-responsive" alt="">
                                         <div class="author-info">
                                              <h5>Model Accuracy</h5>
                                              <p>85%</p>
@@ -220,14 +220,14 @@
                     <div class="col-md-4 col-sm-6">
                          <div class="news-thumb wow fadeInUp" data-wow-delay="0.6s">
                               <a href="kidney.html">
-                                   <img src="images/news-image5.jpg" class="img-responsive" alt="">
+                                   <img src="../static/images/news-image5.jpg" class="img-responsive" alt="">
                               </a>
                               <div class="news-info">
                                    <span>10% of the population worldwide is affected by chronic kidney disease</span>
-                                   <h3><a href="kidney.html">Chronic Kideny Disease Detection</a></h3>
+                                   <h3><a href="{{ url_for('kidney') }}">Chronic Kidney Disease Detection</a></h3>
                                    <p>If test reports define these set of questions then highly accurate results can be generated.</p>
                                    <div class="author">
-                                        <img src="images/author-image.jpg" class="img-responsive" alt="">
+                                        <img src="../static/images/author-image.jpg" class="img-responsive" alt="">
                                         <div class="author-info">
                                              <h5>Model Accuracy</h5>
                                              <p>98%</p>
@@ -240,14 +240,14 @@
                     <div class="col-md-4 col-sm-6">
                          <div class="news-thumb wow fadeInUp" data-wow-delay="0.8s">
                               <a href="parkinson.html">
-                                   <img src="images/news-image6.jpg" class="img-responsive" alt="">
+                                   <img src="../static/images/news-image6.jpg" class="img-responsive" alt="">
                               </a>
                               <div class="news-info">
                                    <span>Parkinson's disease affects 1-2 per 1000 of the population at any time</span>
-                                   <h3><a href="parkinson.html">Parkinson's Disease Detection</a></h3>
+                                   <h3><a href="{{ url_for('parkinson') }}">Parkinson's Disease Detection</a></h3>
                                    <p> Parkinson's disease is an age-related degenerative brain condition, meaning it causes parts of your brain to deteriorate.</p>
                                    <div class="author">
-                                        <img src="images/author-image.jpg" class="img-responsive" alt="">
+                                        <img src="../static/images/author-image.jpg" class="img-responsive" alt="">
                                         <div class="author-info">
                                              <h5>Model Accuracy</h5>
                                              <p>93%</p>
@@ -263,14 +263,14 @@
                     <div class="col-md-4 col-sm-6">
                          <div class="news-thumb wow fadeInUp" data-wow-delay="0.4s">
                               <a href="diabetes.html">
-                                   <img src="images/temp2.jpg" class="img-responsive" alt="">
+                                   <img src="../static/images/temp2.jpg" class="img-responsive" alt="">
                               </a>
                               <div class="news-info">
                                    <span>About 422 million people worldwide are diabetic</span>
-                                   <h3><a href="diabetes.html">Diabetes Detection</a></h3>
+                                   <h3><a href="{{ url_for('diabetes') }}">Diabetes Detection</a></h3>
                                    <p>The model will predict the chances of a person suffering form diabetes if he/she answers the questions asked.</p>
                                    <div class="author">
-                                        <img src="images/author-image.jpg" class="img-responsive" alt="">
+                                        <img src="../static/images/author-image.jpg" class="img-responsive" alt="">
                                         <div class="author-info">
                                              <h5>Model Accuracy</h5>
                                              <p>92%</p>
@@ -317,14 +317,14 @@
      </footer>
 
      <!-- SCRIPTS -->
-     <script src="js/jquery.js"></script>
-     <script src="js/bootstrap.min.js"></script>
-     <script src="js/jquery.sticky.js"></script>
-     <script src="js/jquery.stellar.min.js"></script>
-     <script src="js/wow.min.js"></script>
-     <script src="js/smoothscroll.js"></script>
-     <script src="js/owl.carousel.min.js"></script>
-     <script src="js/custom.js"></script>
+     <script src="../static/js/jquery.js"></script>
+     <script src="../static/js/bootstrap.min.js"></script>
+     <script src="../static/js/jquery.sticky.js"></script>
+     <script src="../static/js/jquery.stellar.min.js"></script>
+     <script src="../static/js/wow.min.js"></script>
+     <script src="../static/js/smoothscroll.js"></script>
+     <script src="../static/js/owl.carousel.min.js"></script>
+     <script src="../static/js/custom.js"></script>
 
 </body>
 </html>
