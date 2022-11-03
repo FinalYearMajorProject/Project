@@ -142,10 +142,10 @@ input[type="checkbox"] {
     <!-----------------------------------Form-section--------------------------------->
     <div id="main-form">
         <p id="description">Provide us the details and we will give you the result!!</p>
-        <form id="survey-form" method="GET" action="/action_page.php">
+        <form id="survey-form" method="POST" action="{{ url_for('predict') }}">
             <div class="rowTab">
                 <div class="labels">
-                    <label id="number-label" for="age">Age</label>
+                    <label id="number-label" for="Age">Age</label>
                 </div>
                 <div class="rightTab">
                     <input type="number" name="Age" id="number" min="0" max="125" class="input-field" placeholder="in years">
@@ -153,7 +153,7 @@ input[type="checkbox"] {
             </div>
             <div class="rowTab">
                 <div class="labels">
-                    <label id="number-label" for="age">Gender</label>
+                    <label id="number-label" for="Gender_Male">Gender</label>
                 </div>
                 <div class="rightTab">
                     <input type="number" name="Gender_Male" id="number" min="0" max="1125" class="input-field" placeholder="0:Male,1:female">
@@ -161,67 +161,67 @@ input[type="checkbox"] {
             </div>
             <div class="rowTab">
                 <div class="labels">
-                    <label id="number-label" for="age">Total Bilirubin </label>
+                    <label id="number-label" for="Total_Bilirubin">Total Bilirubin </label>
                 </div>
                 <div class="rightTab">
-                    <input autofocus type="number" name="Total_Bilirubin" id="number" class="input-field" placeholder="in mg/dL" required>
+                    <input autofocus type="text" name="Total_Bilirubin" id="number" class="input-field" placeholder="in mg/dL" required>
                 </div>
             </div>
             <div class="rowTab">
                 <div class="labels">
-                    <label id="number-label" for="age">Conjugated Bilirubin</label>
+                    <label id="number-label" for="Direct_Bilirubin">Conjugated Bilirubin</label>
                 </div>
                 <div class="rightTab">
-                    <input type="number" name="Direct_Bilirubin" id="number" class="input-field" placeholder="in mg/dL">
+                    <input type="text" name="Direct_Bilirubin" id="number" class="input-field" placeholder="in mg/dL">
                 </div>
             </div>
             <div class="rowTab">
                 <div class="labels">
-                    <label id="number-label" for="age">Alkaline Phosphotase</label>
+                    <label id="number-label" for="Alkaline_Phosphotase">Alkaline Phosphotase</label>
                 </div>
                 <div class="rightTab">
-                    <input type="number" name="Alkaline_Phosphotase" id="number" class="input-field" placeholder="in IU/L">
+                    <input type="text" name="Alkaline_Phosphotase" id="number" class="input-field" placeholder="in IU/L">
                 </div>
             </div>
             <div class="rowTab">
                 <div class="labels">
-                    <label id="number-label" for="age">Alamine Aminotransferase</label>
+                    <label id="number-label" for="Alamine_Aminotransferase">Alamine Aminotransferase</label>
                 </div>
                 <div class="rightTab">
-                    <input type="number" name="Alamine_Aminotransferase" id="number" class="input-field" placeholder="in IU/L">
+                    <input type="text" name="Alamine_Aminotransferase" id="number" class="input-field" placeholder="in IU/L">
                 </div>
             </div>
             <div class="rowTab">
                 <div class="labels">
-                    <label id="number-label" for="age">Aspartate_Aminotransferase</label>
+                    <label id="number-label" for="Aspartate_Aminotransferase">Aspartate_Aminotransferase</label>
                 </div>
                 <div class="rightTab">
-                    <input type="number" name="Aspartate_Aminotransferase" id="number" class="input-field" placeholder="in IU/L">
+                    <input type="text" name="Aspartate_Aminotransferase" id="number" class="input-field" placeholder="in IU/L">
                 </div>
             </div>
             
             <div class="rowTab">
                 <div class="labels">
-                    <label id="number-label" for="age">Total Proteins </label>
+                    <label id="number-label" for="Total_Protiens">Total Proteins </label>
                 </div>
                 <div class="rightTab">
-                    <input autofocus type="number" name="Total_Protiens" id="number" class="input-field" placeholder="in g/dL" required>
+                    <input autofocus type="text" name="Total_Protiens" id="number" class="input-field" placeholder="in g/dL" required>
                 </div>
             </div>
             <div class="rowTab">
                 <div class="labels">
-                    <label id="number-label" for="age">Albumin </label>
+                    <label id="number-label" for="Albumin">Albumin </label>
                 </div>
                 <div class="rightTab">
-                    <input autofocus type="number" name="Albumin" id="number" class="input-field" placeholder="in g/dL" required>
+                    <input autofocus type="text" name="Albumin" id="number" class="input-field" placeholder="in g/dL" required>
                 </div>
             </div>
             <div class="rowTab">
                 <div class="labels">
-                    <label id="number-label" for="age">Albumin and Globulin Ratio </label>
+                    <label id="number-label" for="Albumin_and_Globulin_Ratio">Albumin and Globulin Ratio </label>
                 </div>
                 <div class="rightTab">
-                    <input autofocus type="number" name="Albumin_and_Globulin_Ratio" id="number" class="input-field" placeholder="" required>
+                    <input autofocus type="text" name="Albumin_and_Globulin_Ratio" id="number" class="input-field" placeholder="" required>
                 </div>
             </div>
            

@@ -92,27 +92,37 @@ def predict():
             my_prediction = heart_model.predict(data1)
             return render_template('predict.html', prediction=my_prediction)
 
-        elif(len([float(x) for x in request.form.values()])==18):
+        elif(len([float(x) for x in request.form.values()])==24):
             age = float(int(request.form['age']))
-            bp = float(request.form['bp'])
-            al = float(request.form['al'])
-            su = float(request.form['su'])
-            rbc = int(request.form['rbc'])
-            pc = int(request.form['pc'])
-            pcc = int(request.form['pcc'])
-            ba = int(request.form['ba'])
-            bgr = float(request.form['bgr'])
-            bu = float(request.form['bu'])
-            sc = float(request.form['sc'])
-            pot = float(request.form['pot'])
-            wc = int(request.form['wc'])
-            htn = int(request.form['htn'])
-            dm = int(request.form['dm'])
-            cad = int(request.form['cad'])
-            pe = int(request.form['pe'])
-            ane = int(request.form['ane'])
-
-            data = [age,bp,al,su,rbc,pc,pcc,ba,bgr,bu,sc,pot,wc,htn,dm,cad,pe,ane]
+            blood_pressure = float(request.form['blood_pressure'])
+            specific_gravity = float(request.form['specific_gravity'])
+            albumin = float(request.form['albumin'])
+            sugar = float(request.form['sugar'])
+            red_blood_cells = int(request.form['red_blood_cells'])
+            pus_cell = int(request.form['pus_cell'])
+            pus_cell_clumps = int(request.form['pus_cell_clumps'])
+            bacteria = int(request.form['bacteria'])
+            blood_glucose_random = float(request.form['blood_glucose_random'])
+            blood_urea = float(request.form['blood_urea'])
+            serum_creatinine = float(request.form['serum_creatinine'])
+            sodium = int(request.form['sodium'])
+            potassium = float(request.form['potassium'])
+            haemoglobin = float(request.form['haemoglobin'])
+            packed_cell_volume = float(request.form['packed_cell_volume'])
+            white_blood_cell_count = int(request.form['white_blood_cell_count'])
+            red_blood_cell_count = int(request.form['red_blood_cell_count'])
+            hypertension = int(request.form['hypertension'])
+            diabetes_mellitus = int(request.form['diabetes_mellitus'])
+            coronary_artery_disease = int(request.form['coronary_artery_disease'])
+            appetite = int(request.form['appetite'])
+            peda_edema = int(request.form['peda_edema'])
+            aanemia = int(request.form['aanemia'])
+            
+            
+            data = [age,blood_pressure,specific_gravity,albumin,sugar,red_blood_cells,pus_cell,pus_cell_clumps,bacteria,blood_glucose_random,blood_urea,serum_creatinine,sodium,potassium,haemoglobin,packed_cell_volume,
+       white_blood_cell_count,red_blood_cell_count,hypertension,
+       diabetes_mellitus,coronary_artery_disease,appetite,
+       peda_edema,aanemia]
             data1 = np.array(data).reshape(1,-1)
             my_prediction = kidney_model.predict(data1)
             return render_template('predict.html', prediction=my_prediction)
